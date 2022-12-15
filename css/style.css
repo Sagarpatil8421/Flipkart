@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Merriweather:ital@1&family=Work+Sans:ital,wght@1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    
+}
+
+body{
+    background-color: rgb(233, 229, 223);
+}
+
+:root{
+    --main-bg:#2874f0;
+}
+
+header{
+    
+    background-color: var(--main-bg);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header div{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 5px 0 25px;
+}
+
+header ul{
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header ul li{
+    list-style: none;
+    padding: 0 35px;
+    text-decoration: none;
+    color: white;
+}
+header ul li :hover{
+    font-weight: bold;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header .search input{
+    width: 25vw;
+    height: 30px;
+    font-size: larger;
+    border-radius: 5px;
+    margin: 0 8px 0 25px;
+}
+
+ .btn{
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--main-bg);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+header .btn:hover{
+    background-color: green;
+    border: 2px solid black;
+}
+
+main{
+    min-height: calc(100vh - 55px - 10vh);
+}
+
+.slider{
+    display: flex; 
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider img{
+    /* width: 80vw; */
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.card{
+    width: 90vw;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    overflow: hidden;
+}
+ 
+.card .item{
+    margin: 10px 2.5vw;
+    width:120px ;
+    text-align: center;
+    justify-content: space-around;
+}
+.card .item p{
+    margin-top: 5px;
+}
+
+.highlight{
+    color: #388e3c;
+}
+
+
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg);
+    color: white;
+}
